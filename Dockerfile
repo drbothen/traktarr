@@ -15,7 +15,7 @@ COPY . /${APP_DIR}
 
 RUN \
   apt update && \
-  apt install vim git, python3 python3-pip && \
+  apt install vim git python3 python3-pip && \
   cd /opt && \
   git clone https://github.com/l3uddz/traktarr && \
   chown -R 0:0 traktarr && \
