@@ -5,7 +5,7 @@ ARG BRANCH=
 ARG COMMIT=
 
 ENV \
-  APP_DIR=/opt/traktarr \
+  APP_DIR=traktarr \
   TRAKTARR_CONFIG=/config/config.json \
   TRAKTARR_LOGFILE=/config/traktarr.log \
   LC_ALL=C.UTF-8 \
