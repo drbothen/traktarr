@@ -19,7 +19,7 @@ RUN \
   cd traktarr && \
   python3 -m pip install -r requirements.txt && \
   cd .. && \
-  ln -s /traktarr/traktarr.py /usr/local/bin/traktarr
+  ln -s ./traktarr/traktarr.py /usr/local/bin/traktarr
   
 
 # Change directory
