@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM python:3.7.2-alpine3.8
 
 # Arguments for build tracking
 ARG BRANCH=
@@ -12,8 +12,8 @@ ENV \
   LANG=C.UTF-8
 
 RUN \
-  apt update && \
-  apt install vim git python3 python3-pip -y && \
+  apk update && apk upgrade && \
+  apk add --no-cache bash git openssh && \
   cd /opt && \
   git clone https://github.com/l3uddz/traktarr && \
   chown -R 0:0 traktarr && \
