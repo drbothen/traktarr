@@ -5,13 +5,11 @@ ARG BRANCH=
 ARG COMMIT=
 
 ENV \
-  APP_DIR=traktarr \
+  APP_DIR=/opt/traktarr \
   TRAKTARR_CONFIG=/config/config.json \
   TRAKTARR_LOGFILE=/config/traktarr.log \
   LC_ALL=C.UTF-8 \
   LANG=C.UTF-8
-
-COPY . /${APP_DIR}
 
 RUN \
   apt update && \
